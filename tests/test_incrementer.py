@@ -29,6 +29,7 @@ def test_with_lists(values, exp_res):
     i.inc(values)
     assert values == exp_res
 
+
 @pytest.mark.parametrize("values", [([1, -1, "String", 2.3])])
 def test_with_wrong_lists(values):
     i = Incrementer()
